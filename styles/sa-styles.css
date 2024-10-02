@@ -38,7 +38,7 @@
   --sa-line-height-dense: 0.8;
 
   --sa-border-width: 0.1rem;
-  --sa-border-radius: 1rem;
+  --sa-border-radius: 0rem;
 }
 
 /*styles*/
@@ -114,6 +114,7 @@
 a {
   color: inherit;
   text-decoration: none;
+  text-transform: var(--sa-font-weight-bold);
 }
 
 .nav-item:hover {
