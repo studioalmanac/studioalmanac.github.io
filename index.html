@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Studio Almanac</title>
   <link rel="stylesheet" href="./styles/sa-styles.css">
+  <script src="./scripts/sa-scripts.js" async></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,20 +14,31 @@
   <div class="header">
     <div class="header-nav">
       <div class="nav-left-col">
-        <div class="nav-item"><a href="./index.html">Project</a></div>
-        <div class="nav-item"><a href="./pages/sa-periodicals.html">Periodicals</a></div>
+        <div class="nav-item"><a href="./index.html">Story</a></div>
+        <div class="nav-item"><a href="./pages/sa-periodicals.html">Gallery</a></div>
       </div>
       <div class="nav-center-col">
         <p class="text-title">Studio Almanac</p>
       </div>
       <div class="nav-right-col">
-        <a href="https://www.instagram.com/studioalmanac" target="_blank"><div class="nav-button">Follow</div></a>
+        <a href="https://www.instagram.com/studioalmanac" target="_blank"><div class="nav-button">About</div></a>
       </div>
     </div>
   </div>
   <div class="main" id="story">
-    <div class="image-section">
-      <img class="banner-image" src="./images/projects/brandon-ray-cole_still_02.jpg" alt="portrait of artist in studio">
+    <div class="slideshow-section">
+      <div class="slide">
+        <image src="./images/story/brandon-ray-cole_still_01.jpg"></image>
+      </div>
+      <div class="slide">
+        <image src="./images/projects/brandon-ray-cole_still_02.jpg"></image>
+      </div>
+      <div class="slide">
+        <image src="./images/projects/brandon-ray-cole_still_02.jpg"></image>
+      </div>
+      <div class="slide">
+        <image src="./images/projects/brandon-ray-cole_still_02.jpg"></image>
+      </div>
     </div>
     <div class="text-section">
       <p class="text-large">
@@ -38,10 +50,10 @@
     </div>
     <div class="gallery-section">
       <div class="row-span-1 col-span-1">
-        <img class="gallery-image" src="./images/story/IMG_7245.jpg">
+        <image class="gallery-image" src="./images/story/IMG_7245.jpg">
       </div>
       <div class="row-span-1 col-span-1">
-        <img class="gallery-image" src="./images/story/IMG_7303.jpg">
+        <image class="gallery-image" src="./images/story/IMG_7303.jpg">
       </div>
     </div>
   </div>
