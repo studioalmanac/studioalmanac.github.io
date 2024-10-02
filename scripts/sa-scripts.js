@@ -11,8 +11,4 @@ showSlides(slideIndex);function plusSlide(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
-}function prevSlide() {
-  plusSlide(-1);
-}function nextSlide() {
-  plusSlide(1);
 }
