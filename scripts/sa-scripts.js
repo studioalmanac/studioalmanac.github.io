@@ -1,29 +1,19 @@
-// sa-script.js
-// document.addEventListener('DOMContentLoaded', function() {
-  let slideIndex = 1;
-  showSlides(slideIndex);
+let slideIndex = 0;
+showSlides(slideIndex);
 
-  console.log("hidad")
+setInterval(function () {
+  showSlides((slideIndex += 1));
+}, 5000);
 
-  // Auto rotate every 5 seconds
-  setInterval(function() {
-    console.log("himom")
-      plusSlide(1);
-  }, 5000);
-
-  // Making plusSlide available globally
-  window.plusSlide = function(n) {
-      showSlides(slideIndex += n);
+function showSlides(nextSlideIndex) {
+  const slides = document.getElementsByClassName("slide");
+  if (nextSlideIndex > slides.length) {
+    slideIndex = 0;
   }
 
-  function showSlides(n) {
-      let i;
-      const slides = document.getElementsByClassName("slide");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      slides[slideIndex-1].style.display = "block";
-  }
-// });
+  slides.forEach(function (slide) {
+    slide.style.display = "none";
+  })
+
+  slides[slideIndex].style.display = "block";
+}
