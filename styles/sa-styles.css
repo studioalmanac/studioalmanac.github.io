@@ -38,7 +38,7 @@
   --sa-line-height-dense: 0.8;
 
   --sa-border-width: 0.1rem;
-  --sa-border-radius: 4rem;
+  --sa-border-radius: 0rem;
 }
 
 /*styles*/
@@ -179,6 +179,10 @@ a {
   width: 100vw;
   object-fit: cover;
   display: none;
+}
+
+.slide:first-child {
+  display: block;
 }
 
 .text-section {
