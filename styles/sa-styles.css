@@ -38,7 +38,7 @@
   --sa-line-height-dense: 0.8;
 
   --sa-border-width: 0.1rem;
-  --sa-border-radius: 0rem;
+  --sa-border-radius: 1.25rem;
 }
 
 /*styles*/
@@ -190,6 +190,7 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-medium));
   padding: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-medium)) clamp(var(--sa-spacing-medium), 4vw, var(--sa-spacing-large));
 }
 
