@@ -110,6 +110,10 @@ a {
 
 /*main*/
 
+.site {
+  background-color: var(--sa-background);
+}
+
 .header {
   display: grid;
   grid-template-columns: auto;
@@ -170,7 +174,6 @@ a {
 }
 
 .main {
-  background-color: var(--sa-background);
   z-index: 0;
   overflow: hidden;
 }
@@ -202,7 +205,6 @@ a {
 
 .slide:first-child {
   display: block;
-  overflow: hidden;
 }
 
 .text-section {
@@ -252,10 +254,6 @@ a {
   @media (width <=1320px) {
     grid-column-end: span 1;
   }
-}
-
-.footer {
-  
 }
 
 .footer-nav {
