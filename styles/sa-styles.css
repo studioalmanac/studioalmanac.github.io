@@ -178,16 +178,27 @@ a {
   overflow: hidden;
 }
 
-.image-section {
-  height: clamp(var(--sa-spacing-3x-large), 100vw, 75vh);
-  width: 100vw;
-  object-fit: cover;
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-small));
+  padding: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-medium)) clamp(var(--sa-spacing-medium), 4vw, var(--sa-spacing-large));
 }
 
-.video-section {
-  height: clamp(var(--sa-spacing-3x-large), 100vw, 75vh);
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(var(--sa-spacing-3x-large), 100vh, 75vh);
   width: 100vw;
-  object-fit: cover;
+}
+
+.image {
+  height: clamp(var(--sa-spacing-3x-large), 100vh, 75vh);
+  width: auto;
+  object-fit: contain;
 }
 
 .slideshow-section {
@@ -207,13 +218,10 @@ a {
   display: block;
 }
 
-.text-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-small));
-  padding: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-medium)) clamp(var(--sa-spacing-medium), 4vw, var(--sa-spacing-large));
+.video-section {
+  height: clamp(var(--sa-spacing-3x-large), 100vw, 75vh);
+  width: 100vw;
+  object-fit: cover;
 }
 
 .gallery-section {
@@ -254,6 +262,10 @@ a {
   @media (width <=1320px) {
     grid-column-end: span 1;
   }
+}
+
+.footer {
+  padding: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-medium)) clamp(var(--sa-spacing-medium), 4vw, var(--sa-spacing-large));
 }
 
 .footer-nav {
