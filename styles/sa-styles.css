@@ -38,7 +38,7 @@
   --sa-line-height-dense: 0.8;
 
   --sa-border-width: 0.1rem;
-  --sa-border-radius: 1.25rem;
+  --sa-border-radius: .75rem;
 }
 
 /*styles*/
@@ -212,7 +212,7 @@ a {
   align-items: center;
   text-align: center;
   gap: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-small));
-  padding: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-medium)) clamp(var(--sa-spacing-medium), 4vw, var(--sa-spacing-large));
+  padding: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-large)) clamp(var(--sa-spacing-medium), 4vw, var(--sa-spacing-x-large));
 }
 
 .image-section {
@@ -251,6 +251,8 @@ a {
   height: clamp(var(--sa-spacing-3x-large), 100vw, 75vh);
   width: 100vw;
   object-fit: cover;
+
+  z-index: 1;
 }
 
 .gallery-section {
