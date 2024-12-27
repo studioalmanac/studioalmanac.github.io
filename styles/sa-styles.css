@@ -41,10 +41,10 @@
   --sa-border-width: 0.1rem;
   --sa-border-radius: .75rem;
 
-  --sa-transition-short: transition: transform .5s;
+  --sa-transition-short: transition: transform 3s;
 }
 
-/*styles*/
+/*styles, components*/
 
 .text-x-large {
   color: var(--sa-on-background);
@@ -147,7 +147,7 @@
   padding: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-medium));
 }
 
-.nav__item a {
+a {
   color: inherit;
   text-decoration: none;
 }
@@ -160,7 +160,7 @@
   text-decoration-line: underline;
 }
 
-.mark {
+.sa-mark {
   width: var(--sa-spacing-x-large);
   height: 1fr;
 }
@@ -170,6 +170,8 @@
   border: var(--sa-border-width) var(--sa-on-background) solid;
   border-radius: var(--sa-border-radius);
   padding: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-small)) clamp(var(--sa-spacing-small), 4vw, var(--sa-spacing-medium));
+
+  transition: var(--sa-transition-short)
 }
 
 .button:hover {
@@ -185,10 +187,16 @@
   padding: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-small));;
 }
 
-.icon {
+.sa-icon {
   height: clamp(var(--sa-spacing-3x-large), 100vh, var(--sa-spacing-large));
   width: 100%;
   object-fit: contain;
+
+  transition: var(--sa-transition-short)
+}
+
+.sa-icon:hover {
+  transform: scale(1.01)
 }
 
 .footer__nav {
@@ -276,13 +284,6 @@
 
   gap: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-small));
   align-items: center;
-  
-  transition: var(--sa-transition-short);
-}
-
-.gallery-item:hover {
-  transform: scale(1.01);
-  opacity: 95%;
 }
 
 .gallery-image {
@@ -291,6 +292,16 @@
   object-fit: cover;
   border-radius: var(--sa-border-radius);
   overflow: hidden;
+
+  transition: var(--sa-transition-short);
+}
+
+.gallery-nav {
+  
+}
+
+.gallery-image:hover {
+  opacity: 76%;
 }
 
 .row-span-2 {
