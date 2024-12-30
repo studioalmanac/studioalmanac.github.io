@@ -195,10 +195,6 @@ a {
   transition: var(--sa-transition-short)
 }
 
-.sa-icon:hover {
-  transform: scale(1.01)
-}
-
 .footer__nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -284,20 +280,17 @@ a {
 
   gap: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-small));
   align-items: center;
+  text-align: center;
 }
 
 .gallery-image {
-  height: 100%;
+  height: var(--sa-spacing-4x-large);
   width: 100%;
   object-fit: cover;
   border-radius: var(--sa-border-radius);
   overflow: hidden;
 
   transition: var(--sa-transition-short);
-}
-
-.gallery-nav {
-  
 }
 
 .gallery-image:hover {
