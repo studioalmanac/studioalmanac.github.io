@@ -217,7 +217,14 @@ a {
   align-items: center;
   text-align: center;
   gap: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-small));
-  padding: clamp(var(--sa-spacing-medium), 4vw, var(--sa-spacing-large)) clamp(var(--sa-spacing-x-large), 4vw, var(--sa-spacing-3x-large));
+  padding: clamp(var(--sa-spacing-medium), 4vw, var(--sa-spacing-large)) clamp(var(--sa-spacing-medium), 4vw, var(--sa-spacing-large));
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-small));
+
 }
 
 .image-section {
