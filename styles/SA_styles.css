@@ -307,7 +307,7 @@ a {
 }
 
 .text-section {
-  padding: clamp(var(--sa-spacing-x-small), 10%, var(--sa-spacing-medium)) clamp(var(--sa-spacing-large), 20%, var(--sa-spacing-3x-large));
+  padding: clamp(var(--sa-spacing-x-small), 10%, var(--sa-spacing-large)) clamp(var(--sa-spacing-large), 20%, var(--sa-spacing-3x-large));
 }
 
 .text-block {
