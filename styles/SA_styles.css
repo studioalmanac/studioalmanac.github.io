@@ -343,7 +343,7 @@ a {
   @media (width <=875px) {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: clamp(var(--sa-spacing-large), 4vw, var(--sa-spacing-x-small));
+    grid-gap: clamp(var(--sa-spacing-medium), 4vw, var(--sa-spacing-x-small));
   }
 
   .row-span-2 {
@@ -390,8 +390,6 @@ a {
   align-items: center;
   
   padding: clamp(var(--sa-spacing-small), 4vw, var(--sa-spacing-medium));
-
-  opacity: 76%;
   
   .left-col {
     display: flex;
