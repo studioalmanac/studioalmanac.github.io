@@ -39,6 +39,12 @@
 
   --sa-border-width: 0.1rem;
   --sa-border-radius: .75rem;
+
+  --sa-opacity-2x-large: 50%;
+  --sa-opacity-x-large: 60%;
+  --sa-opacity-large: 70%;
+  --sa-opacity-medium: 80%;
+  --sa-opacity-regular: 90%;
 }
 
 /*styles, components*/
@@ -307,6 +313,7 @@ a {
 }
 
 .text-section {
+  gap: var(--sa-spacing-x-large);
   padding: clamp(var(--sa-spacing-x-small), 10%, var(--sa-spacing-large)) clamp(var(--sa-spacing-large), 20%, var(--sa-spacing-3x-large));
 }
 
@@ -320,6 +327,16 @@ a {
   padding: 0 clamp(var(--sa-spacing-large), 20%, var(--sa-spacing-3x-large));
 }
 
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .absolute {
+    position: absolute;
+  }
+}
+
 .video {
   height: 100%;
   width: 100%;
@@ -329,7 +346,7 @@ a {
 }
 
 .video:hover {
-  opacity: 76%;
+  opacity: var(--sa-opacity-medium);
 }
 
 .gallery-section {
@@ -380,7 +397,7 @@ a {
 }
 
 .gallery-image:hover {
-  opacity: 76%;
+  opacity: var(--sa-opacity-medium)
 }
 
 .graphic-container {
@@ -389,8 +406,10 @@ a {
   grid-gap: clamp(var(--sa-spacing-x-small), 4vw, var(--sa-spacing-small));
   align-items: center;
   
-  padding: clamp(var(--sa-spacing-small), 4vw, var(--sa-spacing-medium));
+  padding: clamp(var(--sa-spacing-small), 4vw, var(--sa-spacing-medium)) clamp(var(--sa-spacing-small), 4vw, var(--sa-spacing-medium)) 0 clamp(var(--sa-spacing-small), 4vw, var(--sa-spacing-medium));
   
+  opacity: var(--sa-opacity-x-large);
+
   .left-col {
     display: flex;
     justify-content: right;
