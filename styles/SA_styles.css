@@ -408,7 +408,7 @@ a {
   
   padding: clamp(var(--sa-spacing-small), 4vw, var(--sa-spacing-medium)) clamp(var(--sa-spacing-small), 4vw, var(--sa-spacing-medium)) 0 clamp(var(--sa-spacing-small), 4vw, var(--sa-spacing-medium));
   
-  opacity: var(--sa-opacity-x-large);
+  opacity: var(--sa-opacity-large);
 
   .left-col {
     display: flex;
